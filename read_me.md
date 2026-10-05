@@ -96,3 +96,31 @@ Example: Changing a report from product-wise sales to region-wise sales.
 - It is mainly used for clustering.
 - Example: Grouping customers into different groups based on their buying habits.
 
+
+# Q5- Data Integration & Redendancy Handling 
+# 1. Data Integration — 4 Marks
+
+- Definition: Data Integration means combining data from different sources into one common system.
+
+1. Entity Identification: Identifying the same entity in different databases.
+2. Data Value Conflicts: Resolving different formats or values for the same data.
+3. Data Transformation: Converting data into a common format.
+4. Data Consistency: Ensuring the combined data is accurate and consistent.
+
+
+# 2. Redundancy Handling — 4 Marks
+
+- Definition: Redundancy handling means identifying and removing duplicate or unnecessary data.
+
+1. Duplicate Data: Same information may appear multiple times.
+2. Correlation Test (χ²): Checks whether two categorical attributes are related.
+3. Remove Redundancy: Unnecessary or repeated data is removed.
+4. Benefit: Reduces storage and improves data accuracy.
+
+
+# Q 6- Issues Regarding Classification & Prediction — 4 Marks
+- Accuracy: The model should give correct predictions with minimum errors.
+- Speed: The model should classify and predict results quickly.
+- Robustness: The model should work properly even when data contains noise or errors.
+- Scalability: The model should handle large amounts of data efficiently.
+- Interpretability: The results of the model should be easy to understand and explain.
