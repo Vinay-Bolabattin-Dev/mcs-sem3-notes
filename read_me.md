@@ -9,7 +9,7 @@
 
 Q3- 4 Marks!!
 
-# Data Cleaning & Binning Techniques
+# Question:- Data Cleaning & Binning Techniques
 - Data Cleaning is the process of removing errors and noise from data to make it accurate and useful.
 1. Binning
 Binning is used to smooth noisy data by dividing data into small groups called bins.
@@ -42,3 +42,57 @@ Example:
 > Bin 1 mean = (4+8+15)/3 = 9  ---> [9, 9, 9]
 > Bin 2 mean = (21+21+24)/3 = 22 --->[22, 22, 22]
 > Bin 3 mean = (25+28+34)/3 = 29 ---> [29, 29, 29]
+
+
+
+# Q2-  Difference Between OLAP & OLTP 
+
+# OLAP	
+1. OLAP stands for Online Analytical Processing.	
+2. Used for data analysis and decision-making.	
+3. Works mainly with large amounts of historical data.
+4. Queries are usually complex and analytical.	
+5. Example: Analyzing yearly sales trends.	
+
+# OLTP
+1. OLTP stands for Online Transaction Processing.
+2. Used for daily transactions and operations.
+3. Works mainly with current/real-time data
+4. Queries are usually simple and fast.
+5. Example: ATM withdrawal, billing, or online order.
+
+
+# Q3- 🟢 OLAP Operations & Data Cube Technology
+OLAP is used to analyze data from different views using a data cube.
+1. Roll-up
+Combines detailed data into higher-level summary data.
+Example: Daily sales → Monthly sales → Yearly sales.
+2. Drill-down
+Goes from summary data to more detailed data.
+Example: Yearly sales → Monthly sales → Daily sales.
+3. Slice
+Selects one particular value from one dimension.
+Example: Viewing only 2026 sales from all sales data.
+4. Dice
+Selects data using multiple conditions/dimensions.
+Example: Viewing 2026 sales of laptops in Mumbai.
+5. Pivot
+Changes the view/orientation of data to see it differently.
+Example: Changing a report from product-wise sales to region-wise sales.
+
+
+# Q 4- Supervised Learning & unsupervised Learning 
+
+# :- Supervised Learning 
+- Supervised Learning learns from labeled data.
+- The correct answer/output is already given in the training data.
+- It is mainly used for classification and prediction.
+- Example: Classifying emails as Spam or Not Spam.
+
+# :- Unsupervised Learning
+- Unsupervised Learning works with unlabeled data.
+- There is no predefined answer/output given.
+- It finds groups or patterns in the data.
+- It is mainly used for clustering.
+- Example: Grouping customers into different groups based on their buying habits.
+
