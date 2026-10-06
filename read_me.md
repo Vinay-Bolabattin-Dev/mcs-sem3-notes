@@ -124,3 +124,112 @@ Example: Changing a report from product-wise sales to region-wise sales.
 - Robustness: The model should work properly even when data contains noise or errors.
 - Scalability: The model should handle large amounts of data efficiently.
 - Interpretability: The results of the model should be easy to understand and explain.
+
+
+
+## 6 marks questions 
+# Q-  Three-Tier Data Warehouse Architecture — 6 Marks
+Definition:
+
+Three-Tier Data Warehouse Architecture divides a Data Warehouse into three layers to store, process and present data efficiently.
+
+Diagram:
+        ┌─────────────────────────────┐
+        │          TOP TIER           │
+        │ Front-end / Reports / Query │
+        └─────────────▲───────────────┘
+                      │
+        ┌─────────────┴───────────────┐
+        │         MIDDLE TIER         │
+        │          OLAP Server        │
+        └─────────────▲───────────────┘
+                      │
+        ┌─────────────┴───────────────┐
+        │         BOTTOM TIER         │
+        │    Data Warehouse Database  │
+        │          + ETL              │
+        └─────────────▲───────────────┘
+                      │
+                 Data Sources
+Explanation:
+
+1. Bottom Tier – Warehouse Database Server
+
+Stores integrated and historical data collected from different sources.
+ETL tools extract, clean, transform and load the data into the warehouse.
+
+2. Middle Tier – OLAP Server
+
+Processes the stored data and makes it ready for fast analysis.
+Supports OLAP operations like Roll-up, Drill-down, Slice and Dice.
+
+3. Top Tier – Front-End Tools
+
+Provides an interface for users to query and access the data.
+Used to create reports, charts and graphs for decision-making.
+
+
+
+# Q 2 - Bayesian Classification (Naïve Bayes) — 6 Marks
+1. Definition:- 
+Bayesian Classification is a classification technique that uses Bayes’ Theorem to find the probability of a data item belonging to a particular class.
+
+2. Bayes’ Theorem
+$$ P(H|X)=\frac{P(X|H)\times P(H)}{P(X)} $$
+P(H|X) → Probability of class H given data X
+P(X|H) → Probability of X given class H
+P(H) → Prior probability of class H
+P(X) → Probability of data X
+
+3. Naïve Bayes Assumption
+It assumes that all attributes/features are independent of each other.
+This makes the calculation simple and fast.
+
+4. Working
+Calculate the probability of each class.
+Calculate the probability of the given attributes for each class.
+Apply Bayes’ Theorem.
+The class with the highest probability is selected.
+
+5. Example
+To classify an email as Spam or Not Spam:
+Calculate \(P(Spam|Email)\)
+Calculate \(P(Not\ Spam|Email)\)
+If P(Spam|Email) = 0.80 and P(Not Spam|Email) = 0.20
+Therefore, the email is classified as Spam.
+
+
+
+# Q 3- Decision Tree Induction — 6 Marks
+1. Definition
+
+Decision Tree Induction is a method of building a tree-like model to classify data by making a series of decisions based on attributes.
+
+2. Structure of Decision Tree
+                 Root Node
+                (Age)
+               /       \
+           Young        Old
+             |            |
+        Internal Node   Internal Node
+          (Student)      (Income)
+          /     \        /      \
+        Yes      No    High      Low
+         |        |      |         |
+       Leaf     Leaf    Leaf      Leaf
+Root Node: First/main attribute used for splitting.
+Internal Node: Represents a decision or test on an attribute.
+Leaf Node: Final class/output.
+3. Node Splitting Criteria
+
+The best attribute is selected to split the data using:
+
+Information Gain / Entropy: Measures how much uncertainty is reduced after splitting. Higher Information Gain = better split.
+Gain Ratio: Improves Information Gain by considering the size of each split.
+Gini Index: Measures impurity of data. Lower Gini = better/purer split.
+4. Pruning
+
+Pruning removes unnecessary branches from the decision tree.
+
+Pre-pruning: Stops tree growth early when a split is not useful.
+Post-pruning: Builds the tree first and then removes unnecessary branches.
