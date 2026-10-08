@@ -230,6 +230,5 @@ Gini Index: Measures impurity of data. Lower Gini = better/purer split.
 4. Pruning
 
 Pruning removes unnecessary branches from the decision tree.
-
 Pre-pruning: Stops tree growth early when a split is not useful.
 Post-pruning: Builds the tree first and then removes unnecessary branches.
