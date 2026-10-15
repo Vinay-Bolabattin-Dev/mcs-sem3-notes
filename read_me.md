@@ -232,3 +232,41 @@ Gini Index: Measures impurity of data. Lower Gini = better/purer split.
 Pruning removes unnecessary branches from the decision tree.
 Pre-pruning: Stops tree growth early when a split is not useful.
 Post-pruning: Builds the tree first and then removes unnecessary branches.
+
+
+# Q- Multidimensional Schemas — 6 Marks
+# 1. Definition
+A Multidimensional Schema is a database structure used in a Data Warehouse to organize data for easy analysis and reporting.
+
+# 2. Types of Multidimensional Schemas
+1. Star Schema
+- It has one central Fact Table connected to multiple Dimension Tables.
+- Dimension tables are denormalized, making the structure simple and queries faster.
+2. Snowflake Schema
+- It has one central Fact Table connected to Dimension Tables.
+- Dimension tables are normalized into smaller tables to reduce data duplication.
+3. Fact Constellation Schema
+- It contains multiple Fact Tables that share common Dimension Tables.
+- It is used to analyze different business processes, such as sales and shipping.
+
+# 3. Diagrams
+STAR SCHEMA
+          [Time]
+             |
+[Product]—[FACT]—[Customer]
+             |
+         [Location]
+
+
+SNOWFLAKE SCHEMA
+[Category]—[Product]
+                 |
+[Time] —— [FACT] —— [Customer]
+
+
+FACT CONSTELLATION
+[Time] —— [Sales Fact] —— [Product]
+   |             |
+   |         [Customer]
+   |
+[Shipping Fact] —— [Location]
