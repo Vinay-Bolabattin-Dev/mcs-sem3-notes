@@ -270,3 +270,34 @@ FACT CONSTELLATION
    |         [Customer]
    |
 [Shipping Fact] —— [Location]
+
+
+# Q- Hierarchical Clustering — 6 Marks
+# 1. Definition
+Hierarchical Clustering is a clustering technique that groups similar data objects into a hierarchy of clusters.
+
+# 2. Types of Hierarchical Clustering
+
+# 1. Agglomerative Clustering (AGNES)
+- It follows a bottom-up approach.
+- Each data object starts as a separate cluster, and similar clusters are merged step by step.
+
+# 2. Divisive Clustering (DIANA)
+- It follows a top-down approach.
+- All data objects start in one cluster, which is divided into smaller clusters step by step.
+
+# 3. Dendrogram
+- A dendrogram is a tree-like diagram that shows how clusters are merged or divided.
+- It helps us understand the relationship between clusters and choose the number of clusters.
+       A       B       C       D
+        \     /         \     /
+         \___/           \___/
+            \             /
+             \___________/
+              Dendrogram
+
+4. Linkage Types
+Linkage determines the distance between two clusters.
+- Single Linkage: Uses the minimum distance between two points in different clusters.
+- Complete Linkage: Uses the maximum distance between two points in different clusters.
+- Average Linkage: Uses the average distance between all pairs of points in the two clusters.
