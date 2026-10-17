@@ -301,3 +301,21 @@ Linkage determines the distance between two clusters.
 - Single Linkage: Uses the minimum distance between two points in different clusters.
 - Complete Linkage: Uses the maximum distance between two points in different clusters.
 - Average Linkage: Uses the average distance between all pairs of points in the two clusters.
+
+
+# Q- Recycled Objective Points — Quick Revision
+# Term---->Simple exam answer
+> OLTP ---->	Customer-oriented; processes daily transactions and uses current operational data and the ER model.
+> OLAP ----> 	Market-oriented; supports managerial decision-making using historical, multidimensional data.
+> Snowflake Schema ----> 	A variant of Star Schema in which dimension tables are normalized.
+> Data Mart	----> A subset of a Data Warehouse designed for a specific department or group of users.
+> Base Cuboid ----> 	The cuboid containing the most detailed data.
+> Apex Cuboid ---->	The highest-level summarized cuboid, with zero dimensions (0-D).
+> Slice---->Selects data using a single value of one dimension.
+> Dice ---->	Selects a subset of data using conditions on two or more dimensions.
+> Drill-down ----> 	Moves from summarized data to more detailed data.
+> Roll-up	----> Moves from detailed data to summarized data.
+> DIANA	----> DIvisive ANAlysis — top-down hierarchical clustering.
+> AGNES	----> AGglomerative NEsting — bottom-up hierarchical clustering.
+> ETL ----> 	Extract, Transform, Load.
+> KDD	----> Knowledge Discovery in Databases.
