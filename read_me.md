@@ -319,3 +319,49 @@ Linkage determines the distance between two clusters.
 > AGNES	----> AGglomerative NEsting — bottom-up hierarchical clustering.
 > ETL ----> 	Extract, Transform, Load.
 > KDD	----> Knowledge Discovery in Databases.
+
+
+
+# Some fill in the black question and answers !!
+
+1. ETL stands for Extract, ______, Load.
+# Ans:- Transform
+
+2. KDD stands for Knowledge Discovery in ______.
+# Ans:- Databases
+
+3. The lowest level cuboid containing the most detailed data is called the ______ cuboid.
+# Ans:- Base
+
+4. The highest-level 0-D cuboid is called the ______ cuboid.
+# Ans:- Apex
+
+5. Selecting data using one dimension is called ______.
+# Ans:- Slice
+
+6. Selecting data using two or more dimensions is called ______.
+# Ans:- Dice
+
+7. Moving from detailed data to summarized data is called ______.
+# Ans:- Roll-up
+
+8. Moving from summarized data to detailed data is called ______.
+# Ans:- Drill-down
+
+9. ______ is a top-down hierarchical clustering method.
+# Ans:- DIANA
+
+10. ______ is a bottom-up hierarchical clustering method.
+# Ans:- AGNES
+
+11. OLTP mainly deals with ______ processing.
+# Ans:- Transaction
+
+12. OLAP supports managerial decision-making using ______ data.
+# Ans:- Historical
+
+13. A Data Mart is a subset of a ______.
+# Ans:-Data Warehouse
+
+14. In a Snowflake Schema, dimension tables are ______.
+# Ans:- Normalized
