@@ -365,3 +365,15 @@ Linkage determines the distance between two clusters.
 
 14. In a Snowflake Schema, dimension tables are ______.
 # Ans:- Normalized
+
+
+# Important True or False — Data Mining
+1. OLTP is used for transaction processing and uses current operational data. — True
+
+2. OLAP deals with historical, multidimensional data for decision-making. — True
+
+3. Slice selects data based on two or more dimensions. — False (Slice uses one dimension; Dice uses two or more.)
+
+4. Apex Cuboid represents the highest level of summarization (0-D cuboid). — True
+
+5. DIANA follows a bottom-up approach to hierarchical clustering. — False 
