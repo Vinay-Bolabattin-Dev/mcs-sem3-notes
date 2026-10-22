@@ -377,3 +377,8 @@ Linkage determines the distance between two clusters.
 4. Apex Cuboid represents the highest level of summarization (0-D cuboid). — True
 
 5. DIANA follows a bottom-up approach to hierarchical clustering. — False 
+
+
+
+
+## wokring on Linkein profile update 
