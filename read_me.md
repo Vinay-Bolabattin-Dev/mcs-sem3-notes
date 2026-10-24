@@ -296,6 +296,7 @@ Hierarchical Clustering is a clustering technique that groups similar data objec
              \___________/
               Dendrogram
 
+
 4. Linkage Types
 Linkage determines the distance between two clusters.
 - Single Linkage: Uses the minimum distance between two points in different clusters.
@@ -318,7 +319,7 @@ Linkage determines the distance between two clusters.
 > DIANA	----> DIvisive ANAlysis — top-down hierarchical clustering.
 > AGNES	----> AGglomerative NEsting — bottom-up hierarchical clustering.
 > ETL ----> 	Extract, Transform, Load.
-> KDD	----> Knowledge Discovery in Databases.
+> KDD	----> Knowledge Discovery in Databases. 
 
 
 
