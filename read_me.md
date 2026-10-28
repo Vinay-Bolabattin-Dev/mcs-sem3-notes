@@ -387,7 +387,6 @@ Linkage determines the distance between two clusters.
 
 
 What is the difference between a Star Schema and a Snowflake Schema?
-
 # Star Schema:
 A centralized fact table connected directly to non-normalized dimension tables.
 Advantage: Simpler queries, faster join performance.
@@ -396,4 +395,4 @@ Disadvantage: Data redundancy.
 # Snowflake Schema:
 An extension of the Star Schema where dimension tables are normalized into multiple related tables.
 Advantage: Minimal data redundancy, saves storage.
-Disadvantage: Complex multi-table joins, slower query execution.
+Disadvantage: Complex multi-table joins, slower query execution. 
