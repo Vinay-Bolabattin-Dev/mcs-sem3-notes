@@ -79,3 +79,37 @@ Set Formula: A • B = (A ⊕ B) ⊖ B
 - Discontinuity means a sudden change in pixel intensity or brightness in an image.
 - It is used to detect edges and boundaries of objects.
 Example: Separating a car from the background is Image Segmentation. Detecting the car's edges is Discontinuity.
+
+# 6. Explain Chain Code and Shape Number with an Example (2–3 Marks)
+1. Chain Code:
+- Chain Code is a method used to represent the boundary or shape of an object using a sequence of direction numbers.
+- It shows the direction of each boundary pixel.
+2. Shape Number:
+- Shape Number is obtained by taking the first difference of the Chain Code.
+- It represents the shape and is independent of the starting point.
+
+# 7. Role of Fourier Transform in Image Processing (2–3 Marks)
+- Fourier Transform converts an image from the spatial domain to the frequency domain.
+- It helps to separate low-frequency and high-frequency components.
+- It is used for image filtering, noise removal and image enhancement.
+- It helps in image sharpening and smoothing.
+
+# Define Pattern and Pattern Class (2 Marks)
+# 1. Pattern:
+- A pattern is an object or item that we want to identify in an image.
+- Example: A handwritten letter or a number.
+# 2. Pattern Class:
+- A Pattern Class is a group of patterns having similar features or characteristics.
+- Example: All images of digit 5 belong to the same pattern class.
+
+
+# Write Expressions for Structuring Element Reflection and Translation (2–3 Marks)
+1. Reflection:
+- Reflection means flipping the structuring element around the origin.
+> Formula (Copy & Paste):
+> B̂ = {w | w = -b, for every b ∈ B}
+
+2. Translation:
+- Translation means shifting the structuring element from one position to another.
+> Formula (Copy & Paste):
+> (B)z = {c | c = b + z, for every b ∈ B}
