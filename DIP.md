@@ -113,3 +113,58 @@ Example: Separating a car from the background is Image Segmentation. Detecting t
 - Translation means shifting the structuring element from one position to another.
 > Formula (Copy & Paste):
 > (B)z = {c | c = b + z, for every b ∈ B}
+
+
+# Q3- Answer the Following ( 4 marks each )
+# 1. Explain Dilation and Erosion Operations with 3 × 3 Matrix Examples (4 Marks)
+1. Dilation:
+> Dilation is a morphological operation used to increase or expand the white (foreground) area of an image.
+> It adds pixels to the boundaries of an object.
+> It helps to fill small gaps and connect nearby objects.
+Example: 
+Input Matrix:        |            After Dilation (using a 3 × 3 structuring element):
+0 0 0                |           1 1 1
+0 1 0                |           1 1 1
+0 0 0                |           1 1 1
+
+2. Erosion:
+> Erosion is a morphological operation used to decrease or shrink the white (foreground) area of an image.
+> It removes pixels from the boundaries of an object.
+> It helps to remove small unwanted objects.
+Example:
+Input Matrix:              After Erosion (using a 3 × 3 structuring element):
+1 1 1                |           0 0 0
+1 1 1                |           0 1 0
+1 1 1                |           0 0 0
+
+# 2. Spatial Filtering Techniques for Smoothing (Means , Median) and Sharpening (sobel, laplician) (4 Marks)
+Spatial Filtering: It is a technique used to improve an image by changing pixel values using a small filter mask.
+
+1. Smoothing Filters:
+> Mean Filter:
+- It replaces the centre pixel with the average value of neighbouring pixels.
+- It is used to reduce noise and blur the image.
+> Median Filter:
+- It replaces the centre pixel with the median value of neighbouring pixels.
+- It is useful for removing salt-and-pepper noise.
+
+2. Sharpening Filters:
+> Sobel Filter:
+- It detects edges by finding changes in pixel intensity.
+- It highlights horizontal and vertical edges.
+> Laplacian Filter:
+- It uses the second-order derivative to detect rapid intensity changes.
+- It makes edges and fine details sharper.
+
+
+# 3. Common Noise Models: Gaussian Noise vs Salt-and-Pepper (Impulse) Noise (4 Marks)
+1. Gaussian Noise:
+- Gaussian Noise is a type of noise that changes pixel brightness randomly.
+- It follows a normal (bell-shaped) distribution.
+- It makes the image look grainy.
+- It can be reduced using a Mean or Gaussian Filter.
+2. Salt-and-Pepper (Impulse) Noise:
+- It is a type of noise that appears as random black and white dots in an image.
+- It changes some pixels to maximum (white) or minimum (black) values.
+- It makes the image look like tiny black and white spots.
+- It can be reduced using a Median Filter.
