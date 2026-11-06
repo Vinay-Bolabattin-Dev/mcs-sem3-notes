@@ -168,3 +168,36 @@ Spatial Filtering: It is a technique used to improve an image by changing pixel 
 - It changes some pixels to maximum (white) or minimum (black) values.
 - It makes the image look like tiny black and white spots.
 - It can be reduced using a Median Filter.
+
+
+# 4. Distance Measures Between Pixels (4 Marks)
+Let two pixels be P(x₁, y₁) and Q(x₂, y₂).
+# 1. Euclidean Distance (De):
+- It is the straight-line distance between two pixels.
+- Formula: De = √[(x1 - x2)² + (y1 - y2)²]
+
+# 2. City-Block Distance (D4):
+- It measures distance by moving only horizontally and vertically.
+- Formula:D4 = |x1 - x2| + |y1 - y2|
+
+# 3. Chessboard Distance (D8):
+- It measures distance by moving horizontally, vertically, or diagonally.
+- Formula: D8 = max(|x1 - x2|, |y1 - y2|)
+
+
+# 5. Basic Gray-Level Transformations (4 Marks)
+Gray-level transformations are used to change the brightness and contrast of an image.
+# 1. Negative Transformation:
+- It changes a bright pixel into a dark pixel and vice versa.
+- It is useful for enhancing details in dark areas.
+- Formula: s = (L - 1) - r
+
+# 2. Log Transformation:
+- It converts dark pixels into brighter values.
+- It is useful for improving details in dark areas of an image.
+- Formula: s = c × log(1 + r)
+
+# 3. Power-Law (Gamma) Transformation:
+- It changes the brightness of an image using a gamma value.
+- It is useful for brightness and contrast correction.
+- Formula: s = c × r^γ
