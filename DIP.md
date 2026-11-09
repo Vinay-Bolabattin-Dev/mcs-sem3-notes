@@ -201,3 +201,70 @@ Gray-level transformations are used to change the brightness and contrast of an 
 - It changes the brightness of an image using a gamma value.
 - It is useful for brightness and contrast correction.
 - Formula: s = c × r^γ
+
+# 6. Boundary Descriptors vs. Regional Descriptors (4 Marks)
+1. Boundary Descriptors:
+- They describe the boundary or outline of an object.
+- They mainly focus on the shape of the object.
+- They are useful for identifying objects based on their outer boundary.
+- Examples: Chain Code, Shape Number, and Fourier Descriptors.
+2. Regional Descriptors:
+- They describe the entire region or area of an object.
+- They use properties inside the object, such as area, texture, and intensity.
+- They are useful for identifying objects based on their region.
+- Examples: Area, centroid, and moments.
+
+
+# Adaptive Thresholding vs Global Thresholding — 4 Marks
+Adaptive Thresholding:
+Adaptive thresholding is a segmentation method where the threshold value changes for different regions of an image based on local pixel properties.
+
+Why preferred over Global Thresholding:
+1. Global thresholding uses one fixed threshold for the entire image.
+2. Adaptive thresholding uses different thresholds for different areas.
+3. It works better when the image has uneven or varying illumination.
+4. It can detect objects/details even when some parts are dark and other parts are bright.
+
+
+# Q4 ) Answer the Following (Attempt Any 2 — 6 Marks Each / Total 12 Marks)
+# 1. Explain Components of a Digital Image Processing System with a Neat Block Diagram. (6 Marks)
+Definition
+A Digital Image Processing System is a system used to capture, process, store, display and transfer digital images.
+Neat Block Diagram
+                         NETWORK
+              ─────────────────────────────
+              ↕             ↕              ↕
+       IMAGE DISPLAY ←→  COMPUTER  ←→ MASS STORAGE
+                            ↕
+             ↙──────────────┼──────────────↘
+            ↙               ↕                ↘
+   HARD COPY DEVICE   IMAGE PROCESSING    IMAGE PROCESSING
+                         HARDWARE             SOFTWARE
+                            ↕
+                       IMAGE SENSORS
+                            ↑
+                      PROBLEM DOMAIN
+
+Components of the System
+1. Image Sensors
+   - Capture the image from the real-world problem domain.
+   - Convert the captured information into digital image data.
+2. Image Processing Hardware
+   - Performs basic operations required for processing digital images.
+   - It works with the computer to process the image.
+3. Computer
+   - Controls and coordinates the complete image processing system.
+   - It executes the required image processing operations.
+4. Image Processing Software
+   - Contains programs and algorithms used to process images.
+   - Examples: enhancement, restoration, segmentation, etc.
+5. Mass Storage
+   - Stores original and processed images.
+   - Provides temporary and permanent storage.
+6. Image Display
+   - Displays the processed image on a monitor or screen.
+7. Hard Copy Device
+   - Produces a permanent printed copy of the image.
+   - Example: printer.
+8. Network
+   - Allows images to be transmitted and shared between different systems.
