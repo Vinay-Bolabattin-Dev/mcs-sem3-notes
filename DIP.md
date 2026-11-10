@@ -268,3 +268,64 @@ Components of the System
    - Example: printer.
 8. Network
    - Allows images to be transmitted and shared between different systems.
+
+
+# 2 —Explain Frequency Domain Lowpass Filters: Ideal, Butterworth, and Gaussian with Cut-Off Profiles
+(6 Marks — Exam-Oriented, Point-wise)
+1. Definition
+A Low-Pass Filter (LPF) in the frequency domain allows low-frequency components to pass and reduces high-frequency components.
+- Low frequencies → smooth regions
+- High frequencies → edges and fine details
+- Therefore, LPF is mainly used for smoothing and noise reduction.
+2. Ideal Low-Pass Filter (ILPF)
+The Ideal LPF passes all frequencies inside the cut-off frequency and completely blocks frequencies outside it.
+
+Formula:
+H(u,v) = 1,   if D(u,v) ≤ D₀
+         0,   if D(u,v) > D₀
+
+Where:
+- D(u,v) = distance from frequency origin
+- D₀ = cut-off frequency
+Cut-off profile:
+H
+1 ─────────┐
+           │
+0          └──────────────→ D
+            D₀
+
+👉 Sharp cut-off → may produce ringing effect.
+3. Butterworth Low-Pass Filter (BLPF)
+Butterworth LPF provides a smooth transition between low and high frequencies.
+
+Formula:
+H(u,v) = 1 / [1 + (D(u,v)/D₀)²ⁿ]
+
+Where:
+- D₀ = cut-off frequency
+- n = order of filter
+Cut-off profile:
+H
+1 ───────────╮
+             ╲
+              ╲
+0              ╰──────────→ D
+                 D₀
+
+👉 Increasing n makes the transition sharper.
+4. Gaussian Low-Pass Filter (GLPF)
+Gaussian LPF gives a very smooth transition and does not have a sharp cut-off.
+
+Formula:
+H(u,v) = e^[−D²(u,v) / 2D₀²]
+
+Cut-off profile:
+H
+1 ─────────╮
+           ╲
+            ╲
+             ╲____
+0                  ───────→ D
+              D₀
+
+👉 It provides smooth filtering and causes less ringing.
